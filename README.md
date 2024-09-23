@@ -1,0 +1,2 @@
+# The-University-Resource-Catalogue-Full-Stack-Development-Project
+ The University Resource Catalogue (URC) is a web-based application designed to help students and faculty find and access academic resources easily. The platform serves as a centralized catalogue where users can search for books, journals, papers, and other educational materials. The goal of this project is to enhance the accessibility and organization of academic resources.

@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #1095d3;
+    color: #fff;
+    border-bottom: 0.5px solid gray;
+    width: 100%;
+    line-height: 80px;
+    height: 80px;
+    font-size: 18px;
+    padding: 0 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar a.nav-logo {
+    float: right;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Karla";
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar ul {
+    float: left;
+    list-style: none;
+    height: inherit;
+    line-height: inherit;
+    padding: 0 50px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+}
+
+.navbar ul li a:hover {
+    background-color: gray;
+}
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.resource-title {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #1095d3;
+    margin: 1rem 0;
+}
+
+.resource-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 80px;
+    background: #1095d3;
+}
+
+.resource-type {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    background: #1095d3;
+    color: #fff;
+    padding: 0 0.3rem;
+}
+
+.resource-type:hover {
+    opacity: 0.9;
+}
+
+.resource-author {
+    color: #ffc107;
+}
+
+.resource-author span {
+    font-weight: 600;
+    color: #252525;
+}
+
+.uploader {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.uploader span {
+    font-weight: 400;
+}
+
+.uploaded-by span {
+    color: #f64749;
+    text-decoration: line-through;
+}
+
+.uploader-name span {
+    color: #1095d3;
+}
+
+.resource-details h2 {
+    text-transform: capitalize;
+    color: #1095d3;
+    padding-bottom: 0.6rem;
+}
+
+.resource-details p {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+    opacity: 0.8;
+}
+
+.resource-details ul {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.resource-details ul li {
+    margin: 0;
+    list-style: none;
+    background-size: 18px;
+    padding-left: 1.7rem;
+    margin: 0.4rem 0;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.resource-details ul li span {
+    font-weight: 400;
+}
+
+textarea {
+    width: 400px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    resize: none;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    background-color: #1095d3;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.comment-box {
+    width: 400px;
+    padding: 20px;
+    margin-bottom: 4px;
+    background-color: #1095d3;
+    border-radius: 4px;
+}
+
+.comment-box p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.commentsection {
+    max-width: 1100px;
+    margin: auto auto;
+    border-radius: 4px;
+}
+
+.commentsection h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #1095d3;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 720px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .resource-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .resource-content {
+        padding-top: 0;
+    }
+}
